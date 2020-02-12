@@ -1,0 +1,2 @@
+include ':app', ':students_view'
+rootProject.name='students_reg'
