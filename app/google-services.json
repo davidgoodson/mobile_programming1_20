@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "597126428314",
+    "firebase_url": "https://todelete-cf40c.firebaseio.com",
+    "project_id": "todelete-cf40c",
+    "storage_bucket": "todelete-cf40c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597126428314:android:33bbe0861b73046fd59123",
+        "android_client_info": {
+          "package_name": "com.example.students_reg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597126428314-uol0trdlsi0f920402r09aseib26f43i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJmKDHQ7E2p-bll5LoZvuJmfd3GNqKYPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597126428314-uol0trdlsi0f920402r09aseib26f43i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

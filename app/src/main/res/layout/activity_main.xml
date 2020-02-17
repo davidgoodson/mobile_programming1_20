@@ -1,18 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="20dp"
+        tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Student!"
+            android:textSize="35sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvFullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Fullname"
+            android:layout_marginTop="50dp"
+            app:layout_constraintTop_toBottomOf="@id/tvHeader"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/etFullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/tvFullname" />
+
+
+        <TextView
+            android:id="@+id/tvRegNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Registraion Number"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/etFullname"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/etRegNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@id/tvRegNo" />
+
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Email"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/etRegNo"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+
+
+        <TextView
+            android:id="@+id/tvCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Course"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/etEmail"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/etCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/tvCourse" />
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Save Student"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/etCourse"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
